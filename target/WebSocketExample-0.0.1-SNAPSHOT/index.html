@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title></title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="websocket.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div id="wrapper">
+		<h1>PRACTICA 2: WebSockets</h1>
+		<h2>Bienvenido al mercado de valores.</h2>
+		<p>En esta Web podras seleccionar pares de KPI para ver sus
+			fluctuaciones en el mercado.</p>
+		<p>
+			<strong>Haz click en <em>Añadir Kpi</em> para empezar
+			</strong>
+		</p>
+		<br />
+		<div id="addDevice">
+			<div class="button">
+				<a href="#" OnClick="showForm()">Añadir Kpi</a>
+			</div>
+			<form id="addDeviceForm">
+				<h3>Añadir nuevo par de Kpi</h3>
+
+				<span>Kpi1: <select name="kpi1_type" id="kpi1">
+						<option value="PS">Product Sales</option>
+						<option value="PE">Product Expenses</option>
+						<option value="RA">Return on Assets</option>
+						<option value="PEB">Product Expenses Budget</option>
+						<option value="PST">Product Sales Target</option>
+						<option value="RE">Return on Equity</option>
+						<option value="RI">Return on Investment</option>
+				</select></span> <span>Kpi2: <select name="kpi2_type" id="kpi2">
+						<option value="PS">Product Sales</option>
+						<option value="PE">Product Expenses</option>
+						<option value="RA">Return on Assets</option>
+						<option value="PEB">Product Expenses Budget</option>
+						<option value="PST">Product Sales Target</option>
+						<option value="RE">Return on Equity</option>
+						<option value="RI">Return on Investment</option>
+				</select></span> <input type="button" class="button" value="Añadir"
+					onClick=formSubmit()> <input type="reset" class="button"
+					value="Cancelar" onClick=hideForm()>
+
+			</form>
+		</div>
+		<br />
+		<h3>Intercambios:</h3>
+		<div id="content"></div>
+	</div>
+	<br>
+	<div id="copyright">
+		<b>Autor:</b> Óscar Rodrigo López
+	</div>
+	<div id="copyright">
+		<b>Asignatura:</b> Arquitectura de Aplicaciones en Red
+	</div>
+	<div id="copyright">
+		<b>Profesor:</b> Christian Zanger
+	</div>
+	<div id="copyright">
+		<b>Universidad:</b> Universidad Rovira i Virgili
+	</div>
+	<br>
+	<img id="img" src="etse.png">
+	<footer>
+		<br>
+		<div id="copyright">Copyright&copy; 2020 - Página creada por
+			Óscar Rodrigo - Todos los derechos reservados</div>
+	</footer>
+</body>
+</html>
